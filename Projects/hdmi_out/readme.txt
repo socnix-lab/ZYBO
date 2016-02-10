@@ -31,6 +31,11 @@ To make sure changes to the project are checked into git:
 ----------------------------
 -- Software
 ----------------------------
+[OPTIONAL]: If you wish to use your own HDF, please make sure the "system.hdf"
+            in "./sdk/hdmi_out_wrapper_hw_platform_0" is updated with the
+            latest hdf, hdmi_out_wrapper.hdf, generated in the Vivado
+            hardware project.
+
 Workspace folder: ./sdk
 The workspace folder is versioned on Git without workspace information. This
 means that when first cloning the repository and opening the ./sdk folder
@@ -39,9 +44,11 @@ locally by manually importing projects, BSPs and hardware platforms. Once
 this is done locally the first time, subsequent git pulls will not touch
 the workspace. New imports will only be necessary when new projects appear.
 
-Use File -> Import -> Existing projects into Workspace and select ./sdk as
-root directory. Check the projects you want imported and make sure "Copy
-projects into workspace" is unchecked.
+To import the project:
+  1. Use File -> Import -> Existing projects into Workspace
+  2. Select ./sdk as root directory.
+  3. Check the projects you want imported
+  4. Make sure "Copy projects into workspace" is unchecked.
 
 "Internal Error" during BSP import can be ignored. Just re-generate BSPs.
 
