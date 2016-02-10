@@ -3,8 +3,9 @@
 ----------------------------
 To re-create a Vivado project:
 
-You must have Vivado 2015.4 installed and the Digilent board files (as instructed 
-here: https://reference.digilentinc.com/vivado:boardfiles2015). Then do the following:
+You must have Vivado 2015.4 installed and the Digilent board files (as
+instructed here: https://reference.digilentinc.com/vivado:boardfiles2015).
+Then do the following:
 
 0. Make sure the /proj does not already contain a project with the same name. 
    You may run cleanup.cmd to delete everything except the utility files.
@@ -31,17 +32,19 @@ To make sure changes to the project are checked into git:
 -- Software
 ----------------------------
 Workspace folder: ./sdk
-The workspace folder is versioned on Git without workspace information. This means
-that when first cloning the repository and opening the ./sdk folder as workspace, it
-will be empty in SDK. The workspace needs to be re-built locally by manually importing projects, BSPs and
-hardware platforms. Once this is done locally the first time, subsequent git pulls will not
-touch the workspace. New imports will only be necessary when new projects appear.
-Use File -> Import -> Existing projects into Workspace and select ./sdk as root directory. Check the
-projects you want imported and make sure "Copy projects into workspace" is unchecked.
+The workspace folder is versioned on Git without workspace information. This
+means that when first cloning the repository and opening the ./sdk folder
+as workspace, it will be empty in SDK. The workspace needs to be re-built
+locally by manually importing projects, BSPs and hardware platforms. Once
+this is done locally the first time, subsequent git pulls will not touch
+the workspace. New imports will only be necessary when new projects appear.
+
+Use File -> Import -> Existing projects into Workspace and select ./sdk as
+root directory. Check the projects you want imported and make sure "Copy
+projects into workspace" is unchecked.
+
 "Internal Error" during BSP import can be ignored. Just re-generate BSPs.
 
 Projects:
-   Videodemo:          Runs a video input/output demo using the HDMI input and VGA output. Controlled over UART with a baud of 115200.
-
-
- 
+  Videodemo: Runs a video input/output demo using the HDMI input and VGA
+             output. Controlled over UART with a baud of 115200.
