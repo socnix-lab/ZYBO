@@ -107,4 +107,5 @@ Projects/*/proj/*
 !Projects/*/proj/create_project.tcl
 !Projects/*/proj/cleanup.cmd
 !Projects/*/proj/cleanup.sh
+!Projects/*/proj/build_project.tcl
 

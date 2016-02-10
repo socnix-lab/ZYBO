@@ -13,6 +13,8 @@ Then do the following:
 2. cd to proj folder found in the same folder as this readme 
    For example: <board repo>/Projects/<project name>/proj
 3. At the TCL console, run: source ./create_project.tcl
+4. [Optional] To build the project: At the TCL console, run:
+   source ./build_project.tcl
 
 To make sure changes to the project are checked into git:
 	Export hardware with bitstream to ./hw_handoff/.
@@ -34,7 +36,7 @@ To make sure changes to the project are checked into git:
 [OPTIONAL]: If you wish to use your own HDF, please make sure the "system.hdf"
             in "./sdk/hdmi_out_wrapper_hw_platform_0" is updated with the
             latest hdf, hdmi_out_wrapper.hdf, generated in the Vivado
-            hardware project.
+            hardware project. (not required if build_project.tcl is used)
 
 Workspace folder: ./sdk
 The workspace folder is versioned on Git without workspace information. This
